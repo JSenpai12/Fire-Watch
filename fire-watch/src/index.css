@@ -1,0 +1,51 @@
+:root {
+  --fw-void: #090c0f;
+  --fw-panel: #10151acc;
+  --fw-panel-solid: #10151a;
+  --fw-hairline: rgba(255, 255, 255, 0.08);
+  --fw-hairline-strong: rgba(255, 255, 255, 0.14);
+  --fw-text: #e6ecf1;
+  --fw-text-muted: #8391a0;
+  --fw-text-dim: #57646f;
+  --fw-signal: #5eead4;
+  --fw-signal-dim: rgba(94, 234, 212, 0.35);
+  --fw-danger: #e63946;
+  --fw-font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fw-font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--fw-void);
+  color: var(--fw-text);
+  font-family: var(--fw-font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--fw-signal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

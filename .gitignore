@@ -1,0 +1,11 @@
+#frontend
+fire-watch/node_modules/
+fire-watch/dist/
+
+#backend
+fire-watch-backend/venv/
+fire-watch-backend/__pycache__/
+fire-watch-backend/**/__pycache__/
+fire-watch-backend/.env
+
+
